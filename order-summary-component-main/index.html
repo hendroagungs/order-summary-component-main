@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    body { 
+      background-image: url("images/pattern-background-desktop.svg"); 
+      background-repeat: no-repeat;
+      background-color: #E0E8FF;
+      font-size:16px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container {
+      width:400px;
+      height:400px;
+      position:relative;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      box-sizing: border-box;
+      margin-top: 150px;
+    }
+    .mini-container{
+      display:inline-block;
+      background-color: white;
+      border-radius: 20px 20px 20px 20px;
+    }
+    .mini-image{
+      background-image: url("images/illustration-hero.svg");
+      width: 400px;
+      height: 220px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .mini-text{
+      text-align:center;
+    }
+    h1{
+      color: #2A334A;
+    }
+
+    h3{
+      color: #999DA5;
+    }
+    .mini-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mini-songs{
+      width: 80%;
+      background-color: #F8F9FE;
+      border-radius: 10px;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    button{
+      border: none;
+      border-radius: 10px;
+    }
+    .proceed{
+      background-color: #382AE1;
+      width:80%;
+      height:40px;
+      color:white;
+      box-shadow: 0px 10px 10px rgb(189, 189, 189);
+    }
+    .cancel{
+      background-color: transparent;
+      width:80%;
+      height: 40px;
+      color: #999DA5
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mini-container">
+      <div class="mini-image">
+      </div>
+      <div class="mini-text">
+        <h1>Order Summary</h1>
+        <h3> You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</h3>
+      </div>
+      <div class="mini-songs">
+        <div class="desc-song">
+          <img style="float:left;margin-left: 20px;" src="images/icon-music.svg">
+          <p style="margin-left: 85px;font-weight: bold;">Annual Plan<br><span style="color:#999DA5">$59.99/year</span> <a href="" style="float:right;line-height: 50%;margin-right: 20px;">Change</a></p>     
+        </div>          
+      </div>
+      <div class="mini-button">
+          <button class="proceed">Proceed to Payment</button>
+      </div>
+      <div class="mini-button">
+          <button class="cancel">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
